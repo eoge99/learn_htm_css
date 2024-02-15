@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background</title>
+    <style>
+      .red {
+        background-color: #ff0000;
+        width: 200px;
+        height: 120px;
+      }
+      .image {
+        background-image: url("../asserts/images/flower.jpg");
+        background-repeat: repeat;
+        background-position: bottom;
+        width: 200px;
+        height: 400px;
+        border: 1px solid black;
+        display: inline-block;
+        overflow-y: scroll;
+      }
+      .attachment-scroll {
+        background-attachment: scroll;
+      }
+      .attachment-fixed {
+        background-attachment: fixed;
+      }
+      /* .attachment-local {
+        background-attachment: local;
+      } */
+      .attachment-local {
+        background: url("../asserts/images/leaves.jpg") repeat top right fixed;
+      }
+      .background-size {
+        width: 300px;
+        height: 300px;
+        background-image: url("../asserts/images/guitar.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border: 1px solid black;
+      }
+      .linear-gradient {
+        width: 500px;
+        height: 200px;
+        border: 1px solid red;
+        background: linear-gradient(to right, red 50%, blue 80%, yellow 100%);
+      }
+      .radial-gradient {
+        width: 500px;
+        height: 200px;
+        border: 1px solid blue;
+        background: radial-gradient(
+          circle at 10% 50%,
+          white,
+          yellow,
+          red,
+          blue
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <h3>background-color</h3>
+    <div class="red"></div>
+
+    <h3>background-image</h3>
+    <div class="image attachment-scroll">
+      <h4>Scroll</h4>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, velit
+      tempore. Voluptatem tempora laboriosam assumenda cupiditate est nostrum
+      molestias culpa, quas doloremque quaerat libero delectus dolorum nesciunt
+      repellendus sint aut. Veritatis voluptate nisi ducimus. Dolor eveniet
+      nulla totam dolore quo iste, minima beatae optio suscipit ad vitae soluta
+      sapiente necessitatibus earum officiis ullam, fuga perspiciatis atque
+      voluptatibus asperiores? Ipsa, et? Provident accusamus ab praesentium
+      exercitationem vitae cum dignissimos sed voluptatem incidunt labore,
+      laboriosam magni dolores pariatur libero nostrum fugit quam veritatis
+      officiis temporibus minima! Laborum iure expedita doloribus fugit totam.
+      Velit quia odio similique adipisci eos? Earum et at amet unde! Doloremque
+      magni numquam molestias. Iusto consequatur assumenda, excepturi quis
+      necessitatibus recusandae deserunt quo eius voluptatum blanditiis nam,
+      dolor quisquam. Nostrum temporibus aut eum numquam voluptatum culpa natus
+      nobis aperiam, quae provident totam mollitia sed debitis non quaerat illo.
+      Est nulla voluptatibus ratione cum dignissimos deleniti iure velit alias
+      ut. Tempora, non? Impedit esse debitis recusandae. Quibusdam, fuga quod
+      officia est corporis atque dicta officiis voluptate nemo delectus nihil
+      fugit facere vel ipsum saepe odit nesciunt magni in voluptatibus laborum!
+      Sunt omnis error consectetur ducimus exercitationem? Ad omnis cumque, in
+      perspiciatis id modi veritatis sequi, laboriosam repellat perferendis
+      quibusdam distinctio tenetur placeat vel ratione voluptatibus. Natus
+      perferendis voluptatem optio saepe! Quo ipsam, assumenda in vero cumque
+      est saepe error nulla fugiat odit ut, repellat reiciendis exercitationem!
+      Et ipsam eum voluptates magnam aperiam, delectus deleniti repudiandae
+      ipsum, est optio dolores facilis.
+    </div>
+    <div class="image attachment-fixed">
+      <h4>Fixed</h4>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, velit
+      tempore. Voluptatem tempora laboriosam assumenda cupiditate est nostrum
+      molestias culpa, quas doloremque quaerat libero delectus dolorum nesciunt
+      repellendus sint aut. Veritatis voluptate nisi ducimus. Dolor eveniet
+      nulla totam dolore quo iste, minima beatae optio suscipit ad vitae soluta
+      sapiente necessitatibus earum officiis ullam, fuga perspiciatis atque
+      voluptatibus asperiores? Ipsa, et? Provident accusamus ab praesentium
+      exercitationem vitae cum dignissimos sed voluptatem incidunt labore,
+      laboriosam magni dolores pariatur libero nostrum fugit quam veritatis
+      officiis temporibus minima! Laborum iure expedita doloribus fugit totam.
+      Velit quia odio similique adipisci eos? Earum et at amet unde! Doloremque
+      magni numquam molestias. Iusto consequatur assumenda, excepturi quis
+      necessitatibus recusandae deserunt quo eius voluptatum blanditiis nam,
+      dolor quisquam. Nostrum temporibus aut eum numquam voluptatum culpa natus
+      nobis aperiam, quae provident totam mollitia sed debitis non quaerat illo.
+      Est nulla voluptatibus ratione cum dignissimos deleniti iure velit alias
+      ut. Tempora, non? Impedit esse debitis recusandae. Quibusdam, fuga quod
+      officia est corporis atque dicta officiis voluptate nemo delectus nihil
+      fugit facere vel ipsum saepe odit nesciunt magni in voluptatibus laborum!
+      Sunt omnis error consectetur ducimus exercitationem? Ad omnis cumque, in
+      perspiciatis id modi veritatis sequi, laboriosam repellat perferendis
+      quibusdam distinctio tenetur placeat vel ratione voluptatibus. Natus
+      perferendis voluptatem optio saepe! Quo ipsam, assumenda in vero cumque
+      est saepe error nulla fugiat odit ut, repellat reiciendis exercitationem!
+      Et ipsam eum voluptates magnam aperiam, delectus deleniti repudiandae
+      ipsum, est optio dolores facilis.
+    </div>
+    <div class="image attachment-local">
+      <h4>local</h4>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, velit
+      tempore. Voluptatem tempora laboriosam assumenda cupiditate est nostrum
+      molestias culpa, quas doloremque quaerat libero delectus dolorum nesciunt
+      repellendus sint aut. Veritatis voluptate nisi ducimus. Dolor eveniet
+      nulla totam dolore quo iste, minima beatae optio suscipit ad vitae soluta
+      sapiente necessitatibus earum officiis ullam, fuga perspiciatis atque
+      voluptatibus asperiores? Ipsa, et? Provident accusamus ab praesentium
+      exercitationem vitae cum dignissimos sed voluptatem incidunt labore,
+      laboriosam magni dolores pariatur libero nostrum fugit quam veritatis
+      officiis temporibus minima! Laborum iure expedita doloribus fugit totam.
+      Velit quia odio similique adipisci eos? Earum et at amet unde! Doloremque
+      magni numquam molestias. Iusto consequatur assumenda, excepturi quis
+      necessitatibus recusandae deserunt quo eius voluptatum blanditiis nam,
+      dolor quisquam. Nostrum temporibus aut eum numquam voluptatum culpa natus
+      nobis aperiam, quae provident totam mollitia sed debitis non quaerat illo.
+      Est nulla voluptatibus ratione cum dignissimos deleniti iure velit alias
+      ut. Tempora, non? Impedit esse debitis recusandae. Quibusdam, fuga quod
+      officia est corporis atque dicta officiis voluptate nemo delectus nihil
+      fugit facere vel ipsum saepe odit nesciunt magni in voluptatibus laborum!
+      Sunt omnis error consectetur ducimus exercitationem? Ad omnis cumque, in
+      perspiciatis id modi veritatis sequi, laboriosam repellat perferendis
+      quibusdam distinctio tenetur placeat vel ratione voluptatibus. Natus
+      perferendis voluptatem optio saepe! Quo ipsam, assumenda in vero cumque
+      est saepe error nulla fugiat odit ut, repellat reiciendis exercitationem!
+      Et ipsam eum voluptates magnam aperiam, delectus deleniti repudiandae
+      ipsum, est optio dolores facilis.
+    </div>
+    <h3>background-size</h3>
+    <div class="background-size"></div>
+    <h3>linear-gradient</h3>
+    <div class="linear-gradient"></div>
+    <h3>radial-gradient</h3>
+    <div class="radial-gradient"></div>
+    <div style="height: 1000px; width: 10px; background-color: red"></div>
+  </body>
+</html>
